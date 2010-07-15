@@ -1,0 +1,35 @@
+ADW.Launcher Theme Template v0.1
+#################################################
+
+License:
+-------------------------------------------------
+This theme template is provided under the the following license restrictions:
+-ALL the Images are provided under the Creative Commons Attribution-NonCommercial 3.0 Unported license (http://creativecommons.org/licenses/by-nc/3.0/)
+-You only are allowed to use this template for commercial purposes if you COMPLETELY replace/remove the original image files.
+
+Usage instructions:
+-------------------------------------------------
+1.-Load the themplate into eclipse:
+	1.a-On eclipse, select new android project
+	1.b-On the new project screen, select "Project from existing source" and select the theme template dir.
+	1.c-Click finish. 
+
+2.-Modify the app packagename and path (you should change if from x.x.x to your.package.name)
+	2.a-On eclipse, look into your project explorer, rightclick the x.x.x package and select "Refactor->Rename..." and follow the instructions.
+
+3.-Editing the AndroidManifest.xml:
+	3.a-EDIT ONLY the packagename AND versioncode/versionname to suit your needs.
+	3.b-If you remove/change the installLocation param, your theme could not be loaded on boot on froyo phones.
+	3.c-If you remove/change the "org.adw.launcher.THEMES" intent filter and/or the "android.intent.category.DEFAULT" category, your theme won't be visible to ADW.Launcher users.
+	3.d-This template is preconfigured to NOT show on the application drawer so users don't get bloated with theme icons on their app drawers.
+
+4.-Edit the res/theme_config.xml to your needs.
+
+5.-Edit the different drawables in there.
+
+6.-You can add CUSTOM ICONS putting them inside the proper drawable directory following this name conventions:
+	6.a: LowercaseActivityNameWithUnderscoresInsteadDots.png
+	6.b example: "com_android_camera_camera.png" for camera activity (com.android.camera.Camera)
+	6.c ecample2: "com_android_browser_browseractivity.png" for internet browser activity (com.android.browser.BrowserActivity)
+
+7.-Export the apk from eclipse as every other android app.
